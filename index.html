@@ -360,7 +360,7 @@
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 const { latitude, longitude } = position.coords;
-                const locationLink = `http://maps.google.com/?q=${latitude},${longitude}`;
+                const locationLink = `https://maps.google.com/?q=${latitude},${longitude}`;
                 alert(`[จำลองการทำงาน] กำลังส่ง SMS ฉุกเฉินพร้อมตำแหน่งของคุณไปยัง ${user.emergencyContacts.join(', ')}\nลิงก์แผนที่: ${locationLink}`);
             }, 
             (error) => alert(`ไม่สามารถดึงตำแหน่งได้: ${error.message}`)
